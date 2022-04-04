@@ -1,0 +1,137 @@
+#Game Description
+Two player math game .
+
+Players take turns to answer simple math addititon problems.
+
+A math question is generated for each turn by picking two numbers between 1 and 20.
+
+the player whose turn it its gets the question and must get the answer or lose a life.
+
+Players get 3 lives
+
+each incorrect answer = 1 lost life. 
+
+After each turn the game should output the scores for each player.
+
+The game ends when one player loses all their lives.
+
+At the end of the game the app will display the winner and the player''s score.
+
+#Example output
+
+Player 1: what does 5 + 3 equal?
+> 9
+Player 1: incorrect!
+
+P1 2/3 vs P2 3/3
+
+Player 2: what does 2 + 6 equal?
+> 8
+Player 2: correct:
+
+P1 2/3 vs P2 3/3
+
+---end of game---
+Player 1 wins with a score of 1/3
+Game Over
+Good bye!
+####################
+
+Nouns
+-------
+
+Players
+Game
+question
+numbers
+answer/response
+turn
+scores
+winner
+
+A game has two players.
+A game will have a winner.
+A game will have turns.
+
+A player will have a wrong answer count.
+A player will have a life count.
+A lose a life method.
+A player will be asked questions
+A player will answer questions
+A player can be a winner, loser, tie? or unknown
+
+A question has a randomly generated question 
+A question has a correct answer.
+A question has a random question generator.
+A question has a check answer method.
+
+A turn will consist of one question from a player.
+has a question
+has a response
+has a player
+
+A turn will update game score. checks for loser? validates response
+ display the score
+
+Turns will alternate between players. - controlled
+
+--------------------------------------------------
+#----------
+
+Game object 
+----------
+attributes
+----------
+-last_player_turn
+-player1 
+-player2
+
+methods
+-------
+-run_game
+-check_for_loser
+-display_winner
+--------------
+#--------------
+
+Turn object
+-------------
+attributes
+----------
+-question
+-response
+-player
+
+methods
+-------
+-update score method.
+-check validation response
+-display score
+-------------
+#-------------
+
+Question object
+-------------
+attributes
+----------
+-question
+-correct_answer_value
+
+methods
+-------
+-private question_generate_random
+-check_response
+
+Player object
+-------------
+attributes
+----------
+-starting_life_count
+-current_lives
+
+methods
+-------
+-lose_a_life 
+-player_score
+
+
