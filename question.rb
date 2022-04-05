@@ -11,8 +11,6 @@
 # -check_response
 
 class Question
-  attr_reader :question
-  attr_reader :current_lives
 
   def initialize ()
     @num1 = rand(1...20)
@@ -28,10 +26,3 @@ class Question
   end  
 
 end
-
-q1 = Question.new()
-
-puts q1.question_text
-ans = q1.is_response_correct(5)
-
-puts "the answer is correct true or false: #{ans}"

@@ -8,7 +8,7 @@
 # methods
 # -------
 # -lose_a_life 
-#-player_score
+# -player_score
 
 class Player
   attr_reader :starting_life_count
@@ -33,7 +33,3 @@ class Player
     current_lives > 0
   end
 end
-
-p1 = Player.new('P1', 3)
-p1.to_s
-p p1
