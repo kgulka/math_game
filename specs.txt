@@ -133,5 +133,6 @@ methods
 -------
 -lose_a_life 
 -player_score
+-is_alive
 
 

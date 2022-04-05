@@ -18,7 +18,6 @@ class Turn
   def initialize (player)
     @question = Question.new()
     @response = 0
-    @question.question_text
     @player = player
   end
   

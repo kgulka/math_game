@@ -14,7 +14,7 @@
 # -display_winner
 # --------------
 
-#Use puts, raise some_val.inspect, and byebug to help with debugging
+require 'byebug'
 
 class Game
   PLAYER_LIVES = 3
@@ -44,12 +44,7 @@ class Game
         @game_winner = @player1
         break
       end
-
-      if next_player == 0
-        next_player = 1
-      else
-        next_player = 0
-      end
+      next_player = next_player == 0 ? 1 : 0
     end
     puts "*** Game Over ***"
     puts "The winner is #{@game_winner.name} with the score: #{@game_winner.player_score_text}."
